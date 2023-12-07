@@ -1,7 +1,9 @@
 import Link from 'next/link'
+
 import { Category } from '../../../payload/payload-types'
-import classes from './index.module.scss'
 import { CategoryCard } from './CategoryCard'
+
+import classes from './index.module.scss'
 
 export const Categories = ({ categories }: { categories: Category[] }) => {
   return (

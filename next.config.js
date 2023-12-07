@@ -8,6 +8,11 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
    */
+  compiler: {
+    removeConsole: {
+      exclude: ['error'],
+    },
+  },
   reactStrictMode: true,
   swcMinify: true,
   images: {

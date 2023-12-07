@@ -1,5 +1,6 @@
 'use client'
 import { useEffect, useState } from 'react'
+
 import classes from './index.module.scss'
 
 export const Promotion = () => {
@@ -13,6 +14,8 @@ export const Promotion = () => {
   targetDate.setDate(targetDate.getDate() + 7)
 
   useEffect(() => {
+    const targetDate = new Date()
+    targetDate.setDate(targetDate.getDate() + 7)
     const timerInterval = setInterval(() => {
       const currentTime = new Date()
       const timeDifference = Math.max(Number(targetDate) - Number(currentTime), 0)

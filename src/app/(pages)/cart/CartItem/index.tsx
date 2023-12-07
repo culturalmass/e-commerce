@@ -1,12 +1,14 @@
 'use client'
 import { useState } from 'react'
-import classes from './index.module.scss'
+import Image from 'next/image'
 import Link from 'next/link'
+import update from 'payload/dist/collections/operations/update'
+
 import { Media } from '../../../_components/Media'
 import { Price } from '../../../_components/Price'
-import Image from 'next/image'
 import { RemoveFromCartButton } from '../../../_components/RemoveFromCartButton'
-import update from 'payload/dist/collections/operations/update'
+
+import classes from './index.module.scss'
 
 export const CartItem = ({ product, title, metaImage, qty, addItemToCart }) => {
   const [quantity, setQuantity] = useState(qty)
